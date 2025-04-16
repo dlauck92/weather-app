@@ -1,0 +1,88 @@
+# === React Frontend ===
+# dependencies
+**/node_modules/
+**/package-lock.json
+**/yarn.lock
+
+# production
+**/build/
+**/dist/
+
+# misc
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+**/.vite/
+
+# logs
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+
+# === Python Backend ===
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.pyenv/
+
+# Environment variables
+.env
+*.env
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# MyPy / static analysis
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# VSCode / IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS / Linux / Windows
+.DS_Store
+Thumbs.db

@@ -58,9 +58,13 @@ cd ..
 npm run dev
 # The frontend will run on http://localhost:3000
 # The backend will run on http://localhost:5000
+```
 
-# 5. Folder Structure
-# The project is organized as follows:
+---
+
+## Project Structure
+
+### The project is organized as follows:
 weather-app/
 ├── client/                # React frontend
 │   ├── src/
@@ -74,25 +78,4 @@ weather-app/
 │   ├── requirements.txt   # Python dependencies
 │   └── .env               # Environment variables
 ├── package.json           # Frontend project metadata and dependencies
-└── [README.md](http://_vscodecontentref_/1)              # Documentation
-
-# 6. Future Enhancements
-# - Geolocation Support: Automatically fetch weather for the user's current location.
-# - Weekly Summary: Add a weekly weather summary view.
-# - Unit Conversion: Allow users to toggle between Celsius and Fahrenheit.
-# - Dark Mode: Re-enable dark mode with a toggle button.
-# - Animations: Add subtle animations for weather icons and transitions.
-
-# 7. License
-# This project is licensed under the MIT License. See the LICENSE file for details.
-
-# 8. Acknowledgments
-# - National Weather Service API: For providing weather data.
-# - Google Maps Geocoding API: For geocoding city and state into latitude and longitude.
-# - React Icons: For weather-related icons.
-# - Bootstrap: For responsive design.
-
-# 9. Contact
-# For questions or feedback, feel free to reach out:
-# - GitHub: [your-username](https://github.com/your-username)
-# - Email: your-email@example.com
+└── [README.md](https://github.com/dlauck92/weather-app/blob/master/README.md)

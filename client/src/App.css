@@ -1,5 +1,40 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure body and html fill the viewport */
+  background-color: #f8f9fa; /* Default light mode background */
+}
+
+body, .dark-mode {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+  color: #007bff;
+  font-size: 2rem; /* Scales better on mobile */
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  color: #555;
+  font-size: 1rem;
+}
+
 .App {
   text-align: center;
+  min-height: 100vh; /* Ensure the main container fills the screen */
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -36,3 +71,64 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Dark mode styles - Commented out for debugging */
+/*
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh; 
+}
+
+.dark-mode body, .dark-mode html {
+  height: 100%; 
+  background-color: #121212; 
+}
+
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+.dark-mode input {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+.dark-mode input::placeholder {
+  color: #aaaaaa; 
+}
+
+.dark-mode button {
+  background-color: #333;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+*/

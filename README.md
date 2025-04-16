@@ -45,17 +45,25 @@ A responsive weather application that allows users to search for weather forecas
 git clone https://github.com/your-username/weather-app.git
 cd weather-app
 
-# 2. Install Dependencies
+# 2. Install Frontend Dependencies
+cd client
 npm install
 
-# 3. Set Up Environment Variables
-cd backend
+# 3. Set Up Backend
+cd ../backend
+# Create a virtual environment
+python -m venv venv
+# Activate the virtual environment
+# On Windows:
+venv\Scripts\activate
+# Install Python dependencies
+pip install -r requirements.txt
 # Create a .env file and add your Google Maps API key
 echo "GOOGLE_MAPS_API_KEY=your-google-maps-api-key" > .env
-cd ..
 
-# 4. Start the App
-npm run dev
+# 4. Start the Application (Frontend and Backend Simultaneously)
+cd ../client
+npm start
 # The frontend will run on http://localhost:3000
 # The backend will run on http://localhost:5000
 ```
@@ -65,6 +73,7 @@ npm run dev
 ## Project Structure
 
 ### The project is organized as follows:
+```
 weather-app/
 ├── client/                # React frontend
 │   ├── src/
@@ -78,4 +87,22 @@ weather-app/
 │   ├── requirements.txt   # Python dependencies
 │   └── .env               # Environment variables
 ├── package.json           # Frontend project metadata and dependencies
-└── [README.md](https://github.com/dlauck92/weather-app/blob/master/README.md)
+└── README.md              # Project documentation
+```
+
+---
+
+## Environment Variables
+The app requires the following environment variables to be set in the `backend/.env` file:
+- `GOOGLE_MAPS_API_KEY`: Your Google Maps Geocoding API key.
+
+---
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+## Acknowledgments
+- Weather data provided by the [National Weather Service API](https://www.weather.gov/documentation/services-web-api).
+- Geocoding powered by the [Google Maps Geocoding API](https://developers.google.com/maps/documentation/geocoding/start).
